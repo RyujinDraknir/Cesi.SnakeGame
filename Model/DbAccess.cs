@@ -1,7 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Cesi.SnakeGame.Model
@@ -9,12 +12,11 @@ namespace Cesi.SnakeGame.Model
     public class DbAccess
     {
         private static DbAccess Instance;
-
-
-        private IEnumerable<User> Users;
+        public List<User> Users { get; set; }
 
         public DbAccess()
         {
+            Users = new();
             LoadData();
         }
 
@@ -27,7 +29,8 @@ namespace Cesi.SnakeGame.Model
 
         public void LoadData()
         {
-
+            Users.Add(new User("michel", "forever"));
+            Users.Add(new User("arthur", "laroque"));
         }
     }
 }
