@@ -22,7 +22,7 @@ namespace Cesi.SnakeGame.Model
         {
             if (Instance == null)
                 Instance = new DbAccess();
-            return Instance
+            return Instance;
         }
 
         public void LoadData()
