@@ -16,7 +16,7 @@ namespace Cesi.SnakeGame
 
             User user = Auth(db, authOptions);
 
-            Game game = new Game(user, 50, 2, 3);
+            Game game = new Game(user, 50, 10, 10);
             game.Start();
         }
 

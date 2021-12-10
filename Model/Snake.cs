@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cesi.SnakeGame.Model
 {
-    class Snake
+    public class Snake
     {
         public int Start { get; set; }
         public int End { get; set; }

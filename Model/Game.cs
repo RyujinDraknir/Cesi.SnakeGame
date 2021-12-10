@@ -53,6 +53,8 @@ namespace Cesi.SnakeGame.Model
             User.State.Up(User);
 
             ConsoleWriter<User>.Execute(new PrintUpUserState(), User);
+
+            User.PastGames.Add(new GameHistory(Players, winner, Snakes));
         }
 
         private void InitBoard()

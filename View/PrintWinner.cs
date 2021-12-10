@@ -16,4 +16,13 @@ namespace Cesi.SnakeGame.View
             Console.ReadLine();
         }
     }
+
+    public class CopyOfPrintWinner : IView<Player>
+    {
+        public void Execute(Player arg)
+        {
+            Console.WriteLine("Player " + arg.Name + " is the winner !!!");
+            Console.ReadLine();
+        }
+    }
 }

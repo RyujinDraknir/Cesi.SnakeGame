@@ -14,4 +14,12 @@ namespace Cesi.SnakeGame.Model
             return controller.Execute();
         }
     }
+
+    public class CopyOfConsoleAsker<T>
+    {
+        public static T Execute(IController<T> controller)
+        {
+            return controller.Execute();
+        }
+    }
 }

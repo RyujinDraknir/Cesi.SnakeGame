@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Cesi.SnakeGame.Core.AUserState" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Core\AUserState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.115" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.States.BeginnerState" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Cesi.SnakeGame.Core.AUserState" FixedFromPoint="true">
+      <Path>
+        <Point X="3.625" Y="4.497" />
+        <Point X="3.625" Y="5.375" />
+        <Point X="3" Y="5.375" />
+        <Point X="3" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Model\States\BeginnerState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.States.ExpertState" Collapsed="true">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Cesi.SnakeGame.Core.AUserState" FixedFromPoint="true">
+      <Path>
+        <Point X="3.625" Y="4.497" />
+        <Point X="3.625" Y="5.375" />
+        <Point X="5.25" Y="5.375" />
+        <Point X="5.25" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Model\States\ExpertState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.States.MediumState" Collapsed="true">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Cesi.SnakeGame.Core.AUserState" FixedFromPoint="true">
+      <Path>
+        <Point X="3.625" Y="4.497" />
+        <Point X="3.625" Y="5.375" />
+        <Point X="7.5" Y="5.375" />
+        <Point X="7.5" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Model\States\MediumState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.States.NewPlayerState" Collapsed="true">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Cesi.SnakeGame.Core.AUserState" FixedFromPoint="true">
+      <Path>
+        <Point X="3.625" Y="4.497" />
+        <Point X="3.625" Y="5.375" />
+        <Point X="9.75" Y="5.375" />
+        <Point X="9.75" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Model\States\NewPlayerState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.States.SnakeBreakerState" Collapsed="true">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Cesi.SnakeGame.Core.AUserState" FixedFromPoint="true">
+      <Path>
+        <Point X="3.625" Y="4.497" />
+        <Point X="3.625" Y="5.375" />
+        <Point X="12" Y="5.375" />
+        <Point X="12" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Model\States\SnakeBreakerState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.Game">
+    <Position X="8" Y="0.5" Width="2" />
+    <AssociationLine Name="User" Type="Cesi.SnakeGame.Model.User" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="2.75" />
+        <Point X="14" Y="2.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABQBAAAAQCAAAAAAAAAAABEAAAAoAAAAAAAAAABoAAA=</HashCode>
+      <FileName>Model\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Players" />
+      <Property Name="Snakes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.ConsoleAsker&lt;T&gt;">
+    <Position X="17.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ConsoleAsker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.ConsoleWriter&lt;T&gt;">
+    <Position X="5.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ConsoleWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.DbAccess">
+    <Position X="14" Y="4.25" Width="1.5" />
+    <AssociationLine Name="Instance" Type="Cesi.SnakeGame.Model.DbAccess">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.03" Y="0.339" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAQAAAAAAAAAAAABAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Model\DbAccess.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Instance" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Users" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.Snake">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAIAAA=</HashCode>
+      <FileName>Model\Snake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.Player">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cesi.SnakeGame.View.Clear" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Clear.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.View.PrintSnakes" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>View\PrintSnakes.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.View.PrintTakeSnake" BaseTypeListCollapsed="true">
+    <Position X="4" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>View\PrintTakeSnake.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.View.PrintTurn" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PrintTurn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.View.PrintUpUserState" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PrintUpUserState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.View.PrintUserState" BaseTypeListCollapsed="true">
+    <Position X="4" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PrintUserState.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.View.PrintWinner" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PrintWinner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.View.WriteForInput" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\WriteForInput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.Controller.AskForAuthOptions" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\AskForAuthOptions.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.Controller.AskForCredentials" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\AskForCredentials.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.Controller.AskForPlayerAction" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\AskForPlayerAction.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.Controller.AskForPlayerNumber" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\AskForPlayerNumber.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.Controller.AskForPlayerPassTurn" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\AskForPlayerPassTurn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.Controller.AskForPlayersNames" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="9" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Controller\AskForPlayersNames.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.GameHistory">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAoAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Model\GameHistory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Snakes" />
+      <Property Name="Players" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Cesi.SnakeGame.Model.User">
+    <Position X="14" Y="1.25" Width="1.5" />
+    <AssociationLine Name="State" Type="Cesi.SnakeGame.Core.AUserState" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.75" Y="2.997" />
+        <Point X="14.75" Y="4.151" />
+        <Point X="4.875" Y="4.151" />
+        <Point X="4.875" Y="4.125" />
+        <Point X="4.5" Y="4.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="PastGames" Type="Cesi.SnakeGame.Model.GameHistory" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14" Y="2.875" />
+        <Point X="13.75" Y="2.875" />
+        <Point X="13.75" Y="3.851" />
+        <Point X="4.75" Y="3.851" />
+        <Point X="4.75" Y="2.622" />
+        <Point X="3.75" Y="2.622" />
+        <Point X="3.75" Y="2.247" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAACAQAABAAAAAA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="State" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="PastGames" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="Cesi.SnakeGame.Core.IController&lt;T&gt;">
+    <Position X="16.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cesi.SnakeGame.Core.IView&lt;T&gt;">
+    <Position X="5.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Cesi.SnakeGame.Model.IUserState">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Core\IUserState.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

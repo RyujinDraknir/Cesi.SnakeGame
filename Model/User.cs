@@ -13,12 +13,14 @@ namespace Cesi.SnakeGame.Model
         public string UserName { get; set; }
         public string Password { get; set; }
         public AUserState State { get; set; }
+        public List<GameHistory> PastGames { get; set; }
 
         public User(string email, string password)
         {
             UserName = email;
             Password = password;
             State = new NewPlayerState();
+            PastGames = new();
         }
     }
 }

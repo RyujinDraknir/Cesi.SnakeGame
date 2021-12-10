@@ -14,4 +14,12 @@ namespace Cesi.SnakeGame.View
             Console.Write(arg);
         }
     }
+
+    public class CopyOfWriteForInput : IView<string>
+    {
+        public void Execute(string arg)
+        {
+            Console.Write(arg);
+        }
+    }
 }

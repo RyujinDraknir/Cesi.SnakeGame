@@ -12,7 +12,7 @@ namespace Cesi.SnakeGame.View
     {
         public void Execute(User arg)
         {
-            Console.WriteLine("User is a" + arg.State.Name + " !!!") ;
+            Console.WriteLine("User " + arg.UserName + " is a " + arg.State.Name + " !!!") ;
         }
     }
 }

@@ -16,4 +16,13 @@ namespace Cesi.SnakeGame.View
             Console.WriteLine("You are on the case " + arg.Score);
         }
     }
+
+    public class CopyOfPrintTurn : IView<Player>
+    {
+        public void Execute(Player arg)
+        {
+            Console.WriteLine("This is the turn of " + arg.Name);
+            Console.WriteLine("You are on the case " + arg.Score);
+        }
+    }
 }

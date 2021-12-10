@@ -16,4 +16,15 @@ namespace Cesi.SnakeGame.Model
             Score = 1;
         }
     }
+
+    public class CopyOfPlayer
+    {
+        public string Name { get; set; }
+        public int Score { get; set; }
+        public CopyOfPlayer(string name)
+        {
+            Name = name;
+            Score = 1;
+        }
+    }
 }
