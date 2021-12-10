@@ -15,6 +15,9 @@ namespace Cesi.SnakeGame
             AuthOptions authOptions = ConsoleAsker<AuthOptions>.Execute(new AskForAuthOptions());
 
             User user = Auth(db, authOptions);
+
+            Game game = new Game(user, 50, 2, 3);
+            game.Start();
         }
 
         private static User Auth(DbAccess db, AuthOptions authOptions)

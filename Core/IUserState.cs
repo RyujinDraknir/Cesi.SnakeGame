@@ -8,6 +8,7 @@ namespace Cesi.SnakeGame.Model
 {
     public interface IUserState
     {
-
+        public bool Up(User user);
+        public bool Down(User user);
     }
 }

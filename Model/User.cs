@@ -1,4 +1,5 @@
-﻿using Cesi.SnakeGame.Model.States;
+﻿using Cesi.SnakeGame.Core;
+using Cesi.SnakeGame.Model.States;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Cesi.SnakeGame.Model
     {
         public string UserName { get; set; }
         public string Password { get; set; }
-        public IUserState State { get; set; }
+        public AUserState State { get; set; }
 
         public User(string email, string password)
         {

@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Cesi.SnakeGame.Model.States
 {
-    public class NewPlayerState : AUserState
+    public class BeginnerState : AUserState
     {
-        public NewPlayerState()
+        public BeginnerState()
         {
-            Name = "New Player";
+            Name = "Beginner";
         }
         public override bool Up(User user)
         {
-            user.State = new BeginnerState();
+            user.State = new MediumState();
             return true;
         }
 
